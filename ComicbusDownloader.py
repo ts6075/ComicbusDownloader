@@ -5,6 +5,7 @@
 # 程式目的: 爬取並下載漫畫圖片
 # 版本記錄
 # v1.0 - 20190511 - 初版
+# v1.1 - 20210225 - 更新網址
 # 備註: 撰寫完畢已可正常執行,尚可優化及提供動態設定、自動偵測新集數等功能
 # #################
 import requests
@@ -16,7 +17,7 @@ import os
 # # 基礎設定       #
 # #################
 headers = {'User-Agent': 'Mozilla/5.0'}
-url = 'https://www.comicbus.com/online/comic-7340.html?ch=' # 漫畫內頁url
+url = 'https://comic.aya.click/online/b-7340.html?ch='      # 漫畫內頁url
 chapter = '117'                                             # 第幾集
 page = '1'                                                  # 第幾頁
 getUrl = url + chapter + '-' + page                         # 漫畫內頁完整url
